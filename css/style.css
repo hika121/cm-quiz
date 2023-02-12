@@ -3,20 +3,28 @@ body{
   padding: 0;
 }
 
+p{
+  margin: 0;
+  padding: 0;
+}
+
 a{
   cursor: pointer;
   text-decoration: none;
 }
 
 .container{
+ width: calc(90%);
+ margin: 0 auto;
  position: relative;
- outline: 2px solid red;
+ /* outline: 2px solid red; */
 }
 
-#question{
+.container #question{
+  /* display: inline-block; */
   margin: 50px auto 40px;
   padding: 18px;
-  width: 660px;
+  width: 95%;
   text-align: center;
   border-radius: 8px;
   background-color: rgba(186,212,209);
@@ -33,7 +41,7 @@ a{
   padding: 18px;
   margin: 0 auto;
   margin-bottom: 18px;
-  width: 480px;
+  width: 80%;
   /* text-align: center; */
   border-radius: 8px;
   background: rgba(225,238,193); 
@@ -173,16 +181,10 @@ a{
 }
 
 @media(max-width:520px){
-  .container{
-    max-width: 520px;
+  /* .container{
+    max-width: 500px;
     margin: 0 auto;
-  }
+  } */
 
-  #question{
-    width: 500px;
-  }
 
-  #choices > li{
-    width: 400px;
-  }
 }
