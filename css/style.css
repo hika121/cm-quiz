@@ -10,6 +10,7 @@ a{
 
 .container{
  position: relative;
+ outline: 2px solid red;
 }
 
 #question{
@@ -169,4 +170,19 @@ a{
 
 .start a:hover{
   opacity: 0.7;
+}
+
+@media(max-width:520px){
+  .container{
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  #question{
+    width: 500px;
+  }
+
+  #choices > li{
+    width: 400px;
+  }
 }
