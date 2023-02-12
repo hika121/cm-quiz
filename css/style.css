@@ -1,0 +1,172 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container{
+ position: relative;
+}
+
+#question{
+  margin: 50px auto 40px;
+  padding: 18px;
+  width: 660px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgba(186,212,209);
+  box-shadow: 0 4px rgb(127, 158, 155);
+}
+
+#choices{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+#choices > li{
+  padding: 18px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  width: 480px;
+  /* text-align: center; */
+  border-radius: 8px;
+  background: rgba(225,238,193); 
+  box-shadow: 0 4px rgb(158, 167, 134);
+  cursor: pointer;
+}
+
+#choices > li:hover{
+  background: rgb(215, 232, 172);
+}
+
+#choices > li.correct{
+  background: rgb(171, 185, 234); 
+  box-shadow: 0 4px rgb(140, 149, 213);
+  pointer-events: none;
+}
+
+#choices > li.correct::after{
+  content: ' ◎ 正解';
+}
+
+#choices > li.wrong{
+  background: rgb(252, 187, 187); 
+  box-shadow: 0 4px rgb(235, 150, 150);
+  pointer-events: none;
+}
+
+#choices > li.wrong::after{
+  content: ' ✖️ 不正解';
+}
+
+#quiz-answer{
+  color: rgb(255, 68, 0);
+  font-size: 16px;
+  margin: 24px auto;
+  width: 480px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#btn, #result >a{
+  background: rgb(165, 172, 222);
+  text-align: center;
+  padding: 16px;
+  margin: 0 auto 32px;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px rgb(109, 112, 141);
+  cursor: pointer;
+}
+
+#btn.disabled{
+  background: rgba(222,223,230);
+  text-align: center;
+  padding: 16px;
+  margin: 0 auto 32px;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px rgb(184,187,207);
+  opacity:0.7;
+  cursor: pointer;
+}
+
+#result{
+  position:absolute;
+  width: 300px;
+  background: #fff;
+  padding:30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+#result.hidden{
+  transform: translateY(-500px);
+}
+
+#result > p{
+  font-size: 24px;
+
+}
+
+#result > a{
+  display: block;
+  text-decoration: none;
+}
+
+/* #next:hover{
+  background: rgb(170, 183, 243);
+} */
+
+.top-page{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.top-page h1{
+  margin: 100px 0 60px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Gen Jyuu Gothic';
+}
+
+.top-page a{
+  display: block;
+  background: rgb(165, 172, 222);
+  text-align: center;
+  padding: 16px;
+  margin: 0 auto 32px;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px rgb(109, 112, 141);
+  color: #333;
+}
+
+.top-page a:hover{
+  opacity: 0.8;
+}
+
+.start{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.start a{
+  color: #333;
+}
+
+.start a:hover{
+  opacity: 0.7;
+}
