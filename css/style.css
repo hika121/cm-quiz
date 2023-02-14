@@ -147,7 +147,7 @@ a{
   margin: 100px 0 60px;
   font-size: 50px;
   text-align: center;
-  font-family: 'Gen Jyuu Gothic';
+  font-family: 'Gen Jyuu Gothic',monospace,sans-serif;
 }
 
 .top-page a{
@@ -185,6 +185,9 @@ a{
     max-width: 500px;
     margin: 0 auto;
   }
-
+ 
+  .top-page h1{
+    font-size: 32px;
+  }
 
 }
